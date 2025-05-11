@@ -29,11 +29,6 @@ public class Documento {
     public String getEstado() { return estado; }
 
     public void setId(int id) { this.id = id; }
-    public void setTitulo(String titulo) { this.titulo = titulo; }
-    public void setAutor(String autor) { this.autor = autor; }
-    public void setTipo(String tipo) { this.tipo = tipo; }
-    public void setEstado(String estado) { this.estado = estado; }
-
     @Override
     public String toString() {
         return titulo + " - " + autor + " [" + tipo + "] - " + estado;

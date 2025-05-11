@@ -21,19 +21,6 @@ public class GestorBiblioteca {
         documentoDAO = new DocumentoDAO();
     }
 
-    // Agregar usuario con contraseña personalizada
-    public void agregarUsuario(String nombre, String tipo, String contrasena) throws SQLException {
-        // Necesitas mapear 'tipo' (nombre del rol) a su id_tipo_usuario antes de insertarlo
-        // Esto requiere una consulta a tipo_usuario (no incluida en este fragmento aún)
-        // Por ahora se deja en forma incompleta a propósito.
-        throw new UnsupportedOperationException("Agregar usuario requiere mapeo de tipo a ID");
-    }
-
-    // Versión con contraseña por defecto
-    public void agregarUsuario(String nombre, String tipo) throws SQLException {
-        agregarUsuario(nombre, tipo, "1234");
-    }
-
     public List<Usuario> obtenerUsuarios() throws SQLException {
         return usuarioDAO.obtenerTodos();
     }
@@ -44,10 +31,6 @@ public class GestorBiblioteca {
 
     public void eliminarUsuario(int id) throws SQLException {
         usuarioDAO.eliminarUsuario(id);
-    }
-
-    public List<Documento> obtenerDocumentos() throws SQLException {
-        return documentoDAO.obtenerTodos();
     }
 
     public List<String> obtenerDocumentosExtendidos() throws SQLException {
@@ -135,7 +118,5 @@ public class GestorBiblioteca {
     public Usuario obtenerUsuarioPorId(int id) throws SQLException {
         return usuarioDAO.obtenerPorId(id);
     }
-    public Documento obtenerDocumentoPorId(int id) throws SQLException {
-        return documentoDAO.obtenerPorId(id);
-    }
+
 }

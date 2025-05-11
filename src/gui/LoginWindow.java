@@ -3,7 +3,7 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 import java.sql.SQLException;
-import gui.GestorBiblioteca;
+
 
 public class LoginWindow extends JFrame {
     private final GestorBiblioteca gestor;

@@ -25,30 +25,11 @@ public class Prestamo {
     }
 
     //Constructor nuevo con nombres
-    public Prestamo(int id, int idUsuario, String nombreUsuario, int idDocumento, String nombreDocumento,
-                    LocalDate fechaPrestamo, boolean devuelto, LocalDate fechaDevolucion) {
-        this.id = id;
-        this.idUsuario = idUsuario;
-        this.nombreUsuario = nombreUsuario;
-        this.idDocumento = idDocumento;
-        this.nombreDocumento = nombreDocumento;
-        this.fechaPrestamo = fechaPrestamo;
-        this.devuelto = devuelto;
-        this.fechaDevolucion = fechaDevolucion;
-    }
-
     // Getters y Setters
     public int getId() {
         return id;
     }
 
-    public int getIdDocumento() {
-        return idDocumento;
-    }
-
-    public int getIdUsuario() {
-        return idUsuario;
-    }
 
     public LocalDate getFechaPrestamo() {
         return fechaPrestamo;
@@ -64,26 +45,6 @@ public class Prestamo {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public void setIdDocumento(int idDocumento) {
-        this.idDocumento = idDocumento;
-    }
-
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public void setFechaPrestamo(LocalDate fechaPrestamo) {
-        this.fechaPrestamo = fechaPrestamo;
-    }
-
-    public void setFechaDevolucion(LocalDate fechaDevolucion) {
-        this.fechaDevolucion = fechaDevolucion;
-    }
-
-    public void setDevuelto(boolean devuelto) {
-        this.devuelto = devuelto;
     }
 
     //NUEVOS Getters y Setters
