@@ -1,7 +1,5 @@
 package persistence;
 
-import model.*;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -108,8 +106,8 @@ public class DocumentoDAO {
                 "CASE " +
                 "    WHEN d.tipo = 'libro' THEN l.numero_paginas " +
                 "    WHEN d.tipo = 'revista' THEN r.mes " +
-                "    WHEN d.tipo = 'cd' THEN c.duracion_min " +   // ya no se castea
-                "    WHEN d.tipo = 'dvd' THEN dv.duracion_min " + // ya no se castea
+                "    WHEN d.tipo = 'cd' THEN c.duracion_min " +
+                "    WHEN d.tipo = 'dvd' THEN dv.duracion_min " +
                 "    WHEN d.tipo = 'tesis' THEN t.autor_estudiante " +
                 "    WHEN d.tipo = 'pdf' THEN p.numero_paginas " +
                 "END AS campo2 " +

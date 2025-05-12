@@ -24,7 +24,6 @@ public class Prestamo {
         this.fechaDevolucion = fechaDevolucion;
     }
 
-    //Constructor nuevo con nombres
     // Getters y Setters
     public int getId() {
         return id;
@@ -55,7 +54,6 @@ public class Prestamo {
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }
-
     public String getNombreDocumento() {
         return nombreDocumento;
     }

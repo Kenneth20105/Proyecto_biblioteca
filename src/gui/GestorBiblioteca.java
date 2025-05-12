@@ -1,6 +1,5 @@
 package gui;
 
-import model.Documento;
 import model.Prestamo;
 import model.Usuario;
 import persistence.DocumentoDAO;
@@ -91,7 +90,7 @@ public class GestorBiblioteca {
         return prestamoDAO.obtenerTodos();
     }
 
-    // Ahora retorna el nombre del tipo de usuario (ej. "administrador")
+    //Retorna el nombre del tipo de usuario (ej. "administrador")
     public String validarCredenciales(String username, String password) throws SQLException {
         Usuario usuario = usuarioDAO.validarCredenciales(username, password);
         return (usuario != null) ? usuario.getRol() : null;

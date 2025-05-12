@@ -51,7 +51,7 @@ public class LoginWindow extends JFrame {
 
         JLabel lblUsuario = new JLabel("Usuario:");
         gbc.gridx = 0;
-        gbc.gridy = 2;  // Ahora es la posición 2 (debajo del logo)
+        gbc.gridy = 2;
         panel.add(lblUsuario, gbc);
 
         txtUsuario = new JTextField(15);
@@ -81,7 +81,7 @@ public class LoginWindow extends JFrame {
         btnLogin.addActionListener(e -> autenticarUsuario());
 
         // Ajustar tamaño de la ventana para acomodar el logo
-        setSize(350, 350);  // Aumenté la altura para el logo
+        setSize(350, 350);  //Altura para el logo
 
         add(panel);
     }

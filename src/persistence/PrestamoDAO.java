@@ -81,7 +81,7 @@ public class PrestamoDAO {
                         rs.getBoolean("devuelto"),
                         rs.getDate("fecha_devolucion") != null ? rs.getDate("fecha_devolucion").toLocalDate() : null
                 );
-                // Seteamos los nuevos campos agregados
+
                 p.setNombreUsuario(rs.getString("nombre_usuario"));
                 p.setNombreDocumento(rs.getString("nombre_documento"));
 

@@ -15,13 +15,6 @@ public class Documento {
         this.estado = estado;
     }
 
-    public Documento(String titulo, String autor, String tipo, String estado) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.tipo = tipo;
-        this.estado = estado;
-    }
-
     public int getId() { return id; }
     public String getTitulo() { return titulo; }
     public String getAutor() { return autor; }
