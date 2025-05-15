@@ -36,7 +36,6 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void construirUI() {
-        // 🔝 PANEL SUPERIOR
         // PANEL SUPERIOR
         JPanel panelSuperior = new JPanel(new BorderLayout());
 
@@ -51,7 +50,7 @@ public class VentanaPrincipal extends JFrame {
             panelSuperior.add(labelFallback, BorderLayout.WEST);
         }
 
-// Botón con emoji de usuario 👤
+// Botón usuario 
         JButton botonUsuario = new JButton("👤");
         botonUsuario.setFocusPainted(false);
         botonUsuario.setMargin(new Insets(4, 8, 4, 8));
@@ -106,7 +105,7 @@ public class VentanaPrincipal extends JFrame {
         menuUsuario.add(itemMora);
         menuUsuario.add(itemCerrar);
 
-// Mostrar el menú al hacer clic en el emoji
+// Mostrar el menú al hacer clic
         botonUsuario.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 menuUsuario.show(botonUsuario, 0, botonUsuario.getHeight());
@@ -122,7 +121,7 @@ public class VentanaPrincipal extends JFrame {
 // Añadir panel completo al frame
         add(panelSuperior, BorderLayout.NORTH);
 
-        // 📋 PANEL CENTRAL
+        // PANEL CENTRAL
         cardLayout = new CardLayout();
         panelPrincipal = new JPanel(cardLayout);
 
@@ -131,7 +130,7 @@ public class VentanaPrincipal extends JFrame {
         JScrollPane scrollPane = new JScrollPane(areaSalida);
         add(scrollPane, BorderLayout.CENTER);
 
-        // ⬇️ PANEL INFERIOR
+        // PANEL INFERIOR
         JPanel botonera = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
         JButton btnAgregarDocumento = new JButton("Agregar Documento");
@@ -347,13 +346,13 @@ public class VentanaPrincipal extends JFrame {
                     }
                 }
             });
-            botonera.add(btnPrestamosActivos); // ✅ lo agregamos a la botonera
+            botonera.add(btnPrestamosActivos); 
         }
 
-        add(botonera, BorderLayout.SOUTH); // ✅ última línea de construirUI
-    } // ✅ cierre correcto de construirUI
+        add(botonera, BorderLayout.SOUTH); 
+    } 
 
-    // ✅ Métodos auxiliares fuera del método construirUI
+    
 
     private void mostrarSeleccionTipo() {
         String[] tipos = {"Libro", "Revista", "CD", "DVD", "PDF", "Tesis"};
